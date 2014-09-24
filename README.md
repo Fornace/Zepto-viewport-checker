@@ -1,4 +1,4 @@
-jQuery-viewport-checker
+Zepto-viewport-checker
 =======================
 
 Little script that detects if an element is in the viewport and adds a class to it.
@@ -8,8 +8,8 @@ Installation
 Just include the script and jQuery in your website <head> tag and call it on the elements you want to check.
 ```code
 <head>
-    <script src="http://code.jquery.com/jquery.js"></script>
-    <script src="viewportchecker.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.4/zepto.js"></script>
+    <script src="zepto.viewportchecker.js"></script>
 
     <script>
         $(document).ready(function(){
@@ -30,6 +30,11 @@ $('.dummy').viewportChecker({
     callbackFunction: function(elem, action){} // Callback to do after a class was added to an element. Action will return "add" or "remove", depending if the class was added or removed
 });
 ```
+
+Prevent viewportChecker from firing
+-------
+To make the plugin work better along other changes you might be doing to the DOM, we added a convenient "avoidVieportCheck" class. Adding this class will stop viewportChecker from executing on the element.
+
 
 Use case
 --------
