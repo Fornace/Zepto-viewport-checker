@@ -27,7 +27,7 @@
             $elem.each(function(){
                 var $obj = $(this);
                 // If class already exists; quit
-                if ($obj.hasClass(options.classToAdd) && !options.repeat || $obj.hasClass("avoidScrollAnimation") ){ 
+                if ($obj.hasClass(options.classToAdd) && !options.repeat || $obj.hasClass("avoidVieportCheck") ){ 
                     return;
                 }
 
