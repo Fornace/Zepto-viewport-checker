@@ -33,9 +33,11 @@ $('.dummy').viewportChecker({
 
 Prevent viewportChecker from firing
 -------
-To make the plugin work better along other changes you might be doing to the DOM, we added a convenient "avoidVieportCheck" class. Adding this class will stop viewportChecker from executing on the element.
+To make the plugin work better along other changes you might be doing to the DOM, we added a convenient `avoidVieportCheck` class.
+
+Adding this class will prevent viewportChecker from executing on the element.
 
 
 Use case
 --------
-The guys from web2feel have written a little tutorial with a great example of how you can use this script. You can check the [tutorial here](http://www.web2feel.com/tutorial-for-animated-scroll-loading-effects-with-animate-css-and-jquery/) and the [demo here](http://web2feel.com/freeby/scroll-effects/index.html).
+The guys from web2feel have written a little tutorial with a great example of how you can use this script with jQuery. You can check the [tutorial here](http://www.web2feel.com/tutorial-for-animated-scroll-loading-effects-with-animate-css-and-jquery/) and the [demo here](http://web2feel.com/freeby/scroll-effects/index.html).
