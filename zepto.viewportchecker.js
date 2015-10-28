@@ -9,6 +9,7 @@
             classToAdd: 'visible',
             offset: 100,
             repeat: false,
+            activeSectionSelector: false,
             callbackFunction: function(elem, action){}
         };
         $.extend(options, useroptions);
@@ -25,6 +26,13 @@
                 viewportBottom = (viewportTop + windowHeight);
 
             $elem.each(function(){
+
+                // we don't continue checking if we are not in a active view
+                if (options.activeSectionSelector && $obj.parents(options.activeSectionSelector).length == 0) {
+                    return;
+                }
+
+
                 var $obj = $(this);
                 // If class already exists; quit
                 if ($obj.hasClass(options.classToAdd) && !options.repeat || $obj.hasClass("avoidVieportCheck") ){ 
