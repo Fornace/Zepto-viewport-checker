@@ -27,6 +27,7 @@ $('.dummy').viewportChecker({
     classToAdd: 'visible', // Class to add to the elements when they are visible
     offset: 100, // The offset of the elements (let them appear earlier or later)
     repeat: false, // Add the possibility to remove the class if the elements are not visible
+    activeSectionSelector: ".view.active", // optional. if you have elements in hidden sections of the app, this selector allows to specify what container should be considered "active". can be any css selector.
     callbackFunction: function(elem, action){} // Callback to do after a class was added to an element. Action will return "add" or "remove", depending if the class was added or removed
 });
 ```
